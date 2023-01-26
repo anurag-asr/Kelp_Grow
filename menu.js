@@ -32,7 +32,7 @@ const start = async () => {
         else if (choice[0] == "WITHDRAW") {
             const code = choice[1]
             const amount = +choice[2]
-            withdraw( code,amount )
+            await withdraw( code,amount )
             console.log(`\n ✅ Withdraw`)
         }
         else if (choice[0] == "BALANCE") {
