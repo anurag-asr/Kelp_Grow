@@ -37,7 +37,8 @@ const start = async () => {
         }
         else if (choice[0] == "BALANCE") {
             const code = choice[1]
-            balance(code)
+            let x1= await balance(code)
+            console.log(x1)
         }
         else {
             console.log(`Invalid Input...`)

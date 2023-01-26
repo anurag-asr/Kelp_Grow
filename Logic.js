@@ -59,7 +59,7 @@ const balance=async(code)=>{
     data = await data.json();
     x=data.filter((elem)=>elem.code === code)
     let {Balance,id,account_name}=x[0];
-    await console.log(`✅ Balance of ${account_name} : ${Balance}`)
+    return  (`✅ Balance of ${account_name} : ${Balance}`)
 }
 
 module.exports = {
