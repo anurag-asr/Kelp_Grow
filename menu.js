@@ -8,7 +8,7 @@ console.log(' 2. DEPOSIT CODE_NAME AMOUNT')
 console.log(' 3. WITHDRAW CODE_NAME AMOUNT')
 console.log(' 4. BALANCE CODE_NAME')
 
-const ip = (msg) => new Promise((resolve, reject) => {rl.question(`\n 👉 ${msg} : `, (ch) => {resolve(ch)})})
+const ip = (msg) => new Promise((resolve, reject) => {rl.question(`\n 👉 ${msg} : `, (ch) => {resolve(ch)})} )
 
 const start = async () => {
     while (true) {
